@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>crud application</title>
+    <script src="country.js"></script>
+  </head>
+  <body onload="fetchAll()">
+    <h4>To Add Countries</h4>
+    <input
+      type="text"
+      name="name"
+      id="name"
+      placeholder="Enter country to add"
+    />
+    <button type="submit" onclick="saveAndUpdate()" id="btn">Submit</button>
+    <div>
+      <h2>Countries List</h2>
+      <p id="show"></p>
+    </div>
+  </body>
+</html>
